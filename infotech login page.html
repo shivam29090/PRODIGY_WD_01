@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form action="www.infotech.com" method="post">
+  <div class="imgcontainer">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATcAAACiCAMAAAATIHpEAAAAwFBMVEX///8AeO8sHnMAdu8Abu4Acu4AcO6dmbcAdO8cBG0Abe4LAGjm8P0mF3Dh7Pw1ivFTSorf3ejw7/QmhfCfwveWvvciD2/q6fBiW5AZAGwAau58dqK70vkoGXEAAGUjEm/Qzd1nofPX5vyMiK339/rv9/5uZ5mtqsTJ3fvBvtKMt/azzfjC1/oAZe0+M31enfN8rvWawPeEf6c2KXm5tsyalrddVY+qyfh5qfSHs/VLlfIafvAAAFpGO4Jgn/OopcEkPCKQAAAHdklEQVR4nO2bCVfiPBSGoZvQUkDEYlhalrKJ446ijMP//1dfctMlrajM9o3g+5wzM22SFvqcbPeWKRQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADArxJWhrPu4+n50/VqNYhZrVbXT+fNxcWsOg7/9Tf8XIyHi9PV80nRsg3DskxBSYGfmZZlGLZdWteunpoXw6/ur0ECmt8MLkvXizug66Zl2N/G4ro9sVeZVXZtORxWP2x0PO1cfj8WR4/WLsZUbPK2LE82/U8v76pttK92aDcciOFm28/Dd5s1vjOv52S86XxEivHIL7btNif+26bxa5VKcZ+U3o5YwPzL33+yv8pAPJz148N21+2SfLb27N12DV/TNOmtaYuxZ69rP67F/M87a2WstByPK1WxXjSf+Byot20+qNvSW1nT3PpvPNP/QVvKGH/Q7NqIx5LxfkPFW3dw0x3uOgcUqrPH8+e98Ta25QB5f/AVZqSXz92m+fx+S8Xbr7IP3grSW/uDVs9iAjJrN4+ntfP3W34Vb+dCnP30fqOxmARLu6weX8Zb4aZoFU8/aDMTs5u901T1Zbzx3vRhiwXtKHa62Rfy9jFN7k0/2akpvCnA26/xE97CL+ItXAjEFNcVB7SPG55e1WqDZjTvXSy6KxErrNMGxPBm8Fyr/ThP44f+7Wh063FvQWdEJDXz2xfXC+4m00b+8xvTyV3guZdKVeotnE4utbuzzaur/j2VbzxC/CbC9RMeK7b57qz6bJu6rpcsW27VeLkMsXhDqx3vWBYntlUSzUwjWY43vucJbVwcP/DKXlR+rzmey0t7AXNuMwF72HFY0IuqOlFV4m0kKnui6uhva/hpKmKLYQhvNb63NU8LCztJ/BgUttbURJApvVVqhlJqFWUvnDJNpafJj5g4vbSwHChjuM88pb3H+lQaeWtcprfzl/+bkB3JeWt222pe57Gw1dvQzCbV9PZCFG/3VpelbhDI0nTym/u9qMqVVX5fFJO3h5Dau24k7rdmzL9A1pu+En8Z+tqQOaA1Lz+xDVN2Pw6N04rUZhrmWo/qKEuy8R1HSmKOgIkP6DBZUO+cBdTxeuVoumo5JIt5Z50HxuSxqBLeevU618ZY/UXWeLf/yM9bZL0V+R+LMmw3Rhzvz2azayFnPRPQTEja7JU4rpzLEWvyVSRsNBrHQgbrNwhe3xfrq+Yc0dzVvxN9yJvIj65Th9LmdHJfFj0reChIb1rP5T1zI2qW4o4979U3/7fkvHFt17LiXLiyaPzl9iFNUmrE62ilSEH/QJ7l92+Xbua87iaDbk4+7uJ1IqSW/jzyJlS1ZM1E+PU/WQI4702P80SUYTJv6DjrTU59F8ktqjSmo/A1560v5Dj3SduGk3S4h1Qh0WIuK49aibekai5GqvPJ9iJ5b0YSva+LtL4KMt4ujHxy5NRKm+a8dfiC2VNz3iOxgoqJjwwGE6Xq6E76ld5YsoTSPOi0/sjj/jFy3kqDpCbalwgy3lZmPtEZCm96jY5z3viiqpXV3RfNf04/6kVsvuUrSW/l5Fx6+9z9zUh3/295W+uvkiNXYmNsUXyR9UaP7J51FMRkxabirZUYi9tskDcvDTb2wZuV1rzlzch2y7i+aNM7wqw3mt4010uhTVx5KUew5mz7SuRNdMmIPfAWDTbiDW9jcYGZzZZ3raSrZr3NszvhJDLgneksSCOKLOSNpevnHnhT+9Eb3uiCaJ2NoXywQSvsNm88VMjCRnI57d1t+0q071Vq9sGb0o/+WH9zH85yPGyiXdnW3SzFWS/p+R54M5U3DT8zv5lvzG9y9dwaW1LCyd9Wk8+/HYi3beupHkVaeW8hRV33hS1s2FtKD9Qb7d+MzP7NeHP/9sJnMa+jfmD8ixlaatlGqWn15b8H6o0WAV2NF2QoK5uG2ZFJuzSmPHPos46sFeM0E0qc+XXqmQfqjQKwot1NGlYNNUALMmFAy1cSIIJ6oHk+SaEJTulwU0fjAer8cL09Sk9xYF+V+ZBVdCoyHu5Dche5vY2zZ60XL4nzZfotifmn8rR1uN6iDIA9EHNc9Unm30rxPpXmezY5brSWYjxS+K6xyykv6HcckQPxIqsj2tw5Z/NWo3Vfl9pEKHuw3sYy31sy7KJhl9J8L0ETnBY4vuNTPD/3ZSaXF8i3Ca4XK67TeUBVlA+XRg/WW6FaKuXeL6SzXWHjR9FU9OxTX3ktw0tZsmiEL9kwjMnN7uF6K4xr6VsvvpSuMz+fG/nxyxT5rH2PJeZc50VNpHX8ILEW+NF+ZT+8vXp/GkPn0ttN27KMdea67oltmfRjenvdzN1zfumzsldmfrSshkvN4QWi5GWabXo8cRxq6/ApMSpb+o7jqHHWd37+/ZPlLcNFt9ul9/UX/KCrdBzlvCoOL3JXVpvX4r9vnG77qebxdDlazhvZgtHRfMvDh/3NaLRUf0De6gvUFoJP9n4BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgT/EfIYavHhRLumwAAAAASUVORK5CYII="
+  </div>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+</body>
+</html>
